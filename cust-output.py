@@ -33,8 +33,8 @@ class CustomerData:
 
         seen = set() # To check for duplicates
 
-        with open('output.cvs', 'w') as output_file:
-            writer = csv.writer(output_file, delimiter='\t')
+        with open('output.csv', 'w') as output_file:
+            writer = csv.writer(output_file)
 
 
             writer.writerow(self.fieldnames)
